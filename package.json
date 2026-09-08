@@ -1,0 +1,13 @@
+{
+  "name": "student-course-registration",
+  "version": "1.0.0",
+  "description": "Student Course Registration System using Node.js and Express, deployable on Render.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

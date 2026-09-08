@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Course Registration System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Course Registration System</h1>
+    <p>Node.js + Express | Deployable on Render</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Register for a Course</h2>
+      <form id="registrationForm">
+        <label>Student Name</label>
+        <input id="studentName" type="text" placeholder="Enter student name" required>
+
+        <label>Student ID</label>
+        <input id="studentId" type="text" placeholder="Enter student ID" required>
+
+        <label>Select Course</label>
+        <select id="courseId" required>
+          <option value="">Loading courses...</option>
+        </select>
+
+        <button type="submit">Register</button>
+      </form>
+      <p id="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>Available Courses</h2>
+      <div id="courses"></div>
+    </section>
+
+    <section class="card">
+      <h2>Registrations</h2>
+      <div id="registrations"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Student Course Registration System © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

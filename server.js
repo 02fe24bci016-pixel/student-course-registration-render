@@ -5,8 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "public")));
-
+app.use(express.static(__dirname));
 const courses = [
   { id: 1, code: "CS101", name: "Introduction to Programming", credits: 4, seats: 30 },
   { id: 2, code: "CS202", name: "Data Structures", credits: 4, seats: 25 },
